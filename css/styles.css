@@ -528,8 +528,8 @@ footer {
   align-items: center;
 }
 
-.column_two .svg_team{
-fill: #fff;
+.column_two .svg_team {
+  fill: #fff;
 }
 
 .column_three {
@@ -714,8 +714,6 @@ fill: #fff;
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 40px;
-
-
 }
 
 .is-hidden {
@@ -747,9 +745,11 @@ fill: #fff;
 }
 
 .title_modal {
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0.03em;
   font-size: 20px;
   line-height: 1.15;
-  text-align: center;
   color: #212121;
   margin-bottom: 12px;
 }
@@ -883,5 +883,4 @@ fill: #fff;
 .contract {
   color: var(--accent_color);
   text-decoration: underline;
-  
 }
