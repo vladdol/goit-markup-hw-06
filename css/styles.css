@@ -74,6 +74,7 @@ h2 {
 }
 
 .logo {
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -95,10 +96,6 @@ h2 {
 
 .item_nav {
   margin-right: 53px;
-}
-
-.item_nav:last-child {
-  margin-right: 315px;
 }
 
 .link_header {
@@ -156,6 +153,7 @@ h2 {
 .contact_header {
   display: flex;
   color: var(--general_color);
+  margin-left: auto;
 }
 
 .contact_header a {
@@ -649,16 +647,13 @@ footer {
   gap: 30px;
 }
 
-.item_cards {
+.link_cards {
+  display: block;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
-.item_cards:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-    outline: transparent;
-}
-
+.link_cards:hover,
 .link_cards:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
   1px 4px 6px rgba(0, 0, 0, 0.16);
