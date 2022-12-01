@@ -245,6 +245,11 @@ h2 {
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.button:hover,
+.button:focus {
+  background-color: #188ce8;
+}
+
 /* features */
 .features {
   padding-top: 94px;
@@ -500,6 +505,15 @@ footer {
   margin-bottom: 9px;
 }
 
+.item_footer a {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.item_footer:hover a,
+.item_footer a:focus {
+  color: var(--general_bg);
+}
+
 .column_footer {
   display: flex;
   align-items: baseline;
@@ -526,6 +540,11 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.column_two .link_svg_team:hover,
+.column_two .link_svg_team:focus {
+  background-color: var(--accent_color);
 }
 
 .column_two .svg_team {
@@ -561,6 +580,11 @@ footer {
   width: 358px;
   height: 50px;
   margin-right: 12px;
+  outline: transparent;
+}
+
+.input_form_footer:focus{
+  border-color: var(--accent_color);
 }
 
 .svg_footer {
@@ -596,7 +620,7 @@ footer {
   cursor: pointer;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button_filter:hover,
@@ -627,10 +651,16 @@ footer {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.item_cards:hover,
-.item_cards:focus {
+.item_cards:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+    outline: transparent;
+}
+
+.link_cards:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+  1px 4px 6px rgba(0, 0, 0, 0.16);
+  outline: transparent;
 }
 
 .box_cards_first {
@@ -740,7 +770,8 @@ footer {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button_close_modal:hover {
+.button_close_modal:hover,
+.button_close_modal:focus {
   fill: var(--accent_color);
 }
 
@@ -873,6 +904,10 @@ footer {
 
 .checkbox_input:checked + .checkbox {
   background-color: var(--accent_color);
+  border-color: var(--accent_color);
+}
+
+.checkbox_input:focus + .checkbox {
   border-color: var(--accent_color);
 }
 
